@@ -16,6 +16,7 @@ const getPool = async () => {
         pool = await mongoose.connect(MONGODB_URI, mongooseOptions);
 
 
+
     } catch (ex) {
 
         throw new Error({ error: 'Internal Server Error', details: ex.message });
